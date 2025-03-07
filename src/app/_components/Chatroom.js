@@ -10,7 +10,8 @@ import Modal from './Modal';
 
 const Chatroom = ({ roomId }) => {
 
-    const socket = useMemo(() => io("http://localhost:3002"), []);
+    const socket = useMemo(() => io("https://chattiko-1.onrender.com"), []);
+    // const socket = useMemo(() => io("http://localhost:3002"), []);
     const [message, setMessage] = useState("");
     const [chat, setChat] = useState([]);
     const [userId, setUserId] = useState("");
