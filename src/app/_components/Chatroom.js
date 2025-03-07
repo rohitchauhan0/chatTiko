@@ -93,7 +93,7 @@ const Chatroom = ({ roomId }) => {
 
     return (
         <>
-            <div className=' bg-[#353648] lg:h-screen h-[85vh] w-full flex items-center flex-col p-3 '>
+            <div className=' bg-[#353648] lg:h-screen h-[87vh] w-full flex items-center flex-col p-3 '>
             <audio ref={notificationTone} src="/tone.mp3" preload="auto" />
                 <div className=' max-w-screen-md rounded-lg mx-auto bg-[#3F4255] w-full h-full relative overflow-hidden border-2 border-[#2A2A3C] py-20 '>
                     <div className=' absolute w-full top-0 bg-[#353543] py-2 px-7 border-b-2 border-[#2A2A3C] flex items-center justify-between'>
@@ -144,9 +144,9 @@ const Chatroom = ({ roomId }) => {
                         </div>
                     </div>
 
-                    <div className=' absolute w-full bottom-0  py-2 px-7  border-[#2A2A3C] flex items-center justify-between space-x-5'>
+                    <div className=' absolute w-full bottom-0  py-2 lg:px-7 px-2  border-[#2A2A3C] flex items-center justify-between lg:space-x-5 space-x-2'>
                         <input onKeyDown={handleKeyDown} value={message} type="text" onChange={(e) => setMessage(e.target.value)} className=' bg-gray-700 text-white py-3 px-3 rounded w-full border-2 border-[#2A2A3C]' placeholder='Message' />
-                        <button onClick={() => sendMessage("text", message)} className='bg-[#5A65CA] cursor-pointer hover:bg-[#5a65cae2] text-white font-bold py-3 px-10 rounded'>Send</button>
+                        <button onClick={() => sendMessage("text", message)} className='bg-[#5A65CA] cursor-pointer hover:bg-[#5a65cae2] text-white font-bold py-3 lg:px-10 px-4 rounded'>Send</button>
                     </div>
 
                 </div>
