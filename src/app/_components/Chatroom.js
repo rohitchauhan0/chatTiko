@@ -93,7 +93,7 @@ const Chatroom = ({ roomId }) => {
 
     return (
         <>
-            <div className=' bg-[#353648] lg:h-screen h-[83vh] w-full flex items-center flex-col p-3 '>
+            <div className=' bg-[#353648] lg:h-screen h-[85vh] w-full flex items-center flex-col p-3 '>
             <audio ref={notificationTone} src="/tone.mp3" preload="auto" />
                 <div className=' max-w-screen-md rounded-lg mx-auto bg-[#3F4255] w-full h-full relative overflow-hidden border-2 border-[#2A2A3C] py-20 '>
                     <div className=' absolute w-full top-0 bg-[#353543] py-2 px-7 border-b-2 border-[#2A2A3C] flex items-center justify-between'>
